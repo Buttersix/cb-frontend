@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import ChatPage from './pages/ChatPage';
+import Home from './pages/Home';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 function App() {
+  const user = false;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <>
+        <Routes>
+          <Route path="/" element={user ? <Navigate to="/home" /> : <Home />} />
+          <Route path="/home" element={!user ? <Navigate to="/" /> : <ChatPage />} />
+        </Routes>
+      </>
+    </BrowserRouter>
   );
 }
 
