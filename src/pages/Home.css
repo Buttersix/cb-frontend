@@ -29,15 +29,89 @@
   width: 50px;
 }
 
-.loginButton {
-  height: 18vh;
-  background-color: transparent;
-  width: 300px;
+.google-button {
+  height: 40px;
+  border-width: 1;
+  border-color: black;
+  background: white;
+  color: #737373;
+  border-radius: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 6vh;
-  margin-left: -150px;
-  font-size: 1.2rem;
+  margin-left: -100px;
+  white-space: nowrap;
+  margin-top: 20px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.google-button:hover, .google-button:focus{
+  box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.2);
+  outline: none;
+}
+
+.google-button:active{
+  outline: none;
+  box-shadow: 1px 4px 5px 1px rgba(0,0,0,0.3);
+  transition-duration: 10ms;
+}
+
+.google-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 0 0px 8px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+}
+
+.google-button__icon--plus {
+  width: 27px;
+}
+
+.google-button__text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.accountLink {
+  height: 18vh;
+  background-color: transparent;
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 12vh;
+  margin-left: -180px;
+  font-size: 1.0rem;
   text-align: center;
+}
+
+.link {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  height: 40px;
+  width: 240px;
+  margin-left: -120px;
+  text-align: center;
+  background-color: #53E094;
+  border-width: 0;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color: #10d86d;
+}
+
+.login-text {
+  color: deepskyblue;
+  text-decoration: none;
 }

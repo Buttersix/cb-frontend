@@ -8,7 +8,7 @@ const Card = ({post}) => {
         <div className="user">{post.user}</div>
         <div className="message">{post.message}</div>
         <div className="voteContainer">
-          <div className="voteCount">{post.voteCount} votes</div>
+          <div className="voteCount">{post.upvotes} votes</div>
           <button className="voteFor">UPVOTE</button>
         </div>
       </div>
