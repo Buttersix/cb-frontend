@@ -1,0 +1,41 @@
+.post-btn {
+  background-color: #53E094;
+  height: 30px;
+  width: 80px;
+  border-width: 0;
+  border-radius: 18px;
+  margin-left: 290px;
+  color: white;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.post-btn:hover {
+  background-color: #10d86d;
+}
+
+.post-input {
+  padding: 14px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 8px;
+  width: 91%;
+  resize: none;
+  font-size: 16px;
+}
+
+.message-length {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.message-length80 {
+  margin-left: 5px;
+  margin-top: 10px;
+  color: rgb(206, 189, 1);
+}
+
+.message-length100 {
+  margin-left: 5px;
+  margin-top: 10px;
+  color: rgb(174, 0, 0);
+}

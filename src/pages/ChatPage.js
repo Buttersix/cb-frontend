@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import "./ChatPage.css"
 import Card from '../components/Card'
+import PostForm from '../components/PostForm'
 
 const ChatPage = () => {
   const [posts, getPosts] = useState([])
@@ -22,11 +23,8 @@ const ChatPage = () => {
 
   return (
     <>
-      <div className="settings">
-        
-      </div>
       <div className="new-post-container">
-
+        <PostForm />
       </div>
       <div className="posts-container">
         {posts.map(post => (

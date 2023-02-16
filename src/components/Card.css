@@ -57,3 +57,7 @@
   margin-top: 2%;
   cursor: pointer;
 }
+
+.voteFor:hover {
+  background-color: #10d86d;
+}

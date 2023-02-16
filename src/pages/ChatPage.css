@@ -16,7 +16,7 @@
   top: 50%;
   left: 50%;
   margin-left: -190px;
-  margin-top: -30vh;
+  margin-top: -34vh;
   background-color: red;
 }
 
@@ -26,7 +26,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -16vh;
+  margin-top: -14vh;
   margin-left: -190px;
   max-height: 600px;
   overflow-y: auto;
