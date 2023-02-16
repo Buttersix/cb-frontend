@@ -27,13 +27,14 @@ const PostForm = () => {
       .then((response) => {
         setPostData(response.data)
         setPostData({ user: currentUser, message: '', upvotes: 0 })
+        window.location.reload(true)
+        history('/home')
       })
       .catch((error) => console.error(`Error: ${error}`))
     } catch (error) {
       console.error(`Error: ${error}`)
     }
 
-    history('/home')
   }
 
   return (
