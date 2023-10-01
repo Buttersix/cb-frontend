@@ -6,7 +6,6 @@ import PostForm from '../components/PostForm'
 
 const ChatPage = () => {
   const [posts, getPosts] = useState([])
-  const [winner, setWinner] = useState("")
 
   const fetchPosts = async () => {
     await axios
@@ -22,13 +21,8 @@ const ChatPage = () => {
     fetchPosts()
   }, [])
 
-  useEffect(() => {
-    setWinner("butte134")
-  }, [])
-
   return (
     <>
-      <div className="previous-winner-info">Previous winner: {winner}</div>
       <div className="new-post-container" id="post-container">
         <PostForm />
       </div>

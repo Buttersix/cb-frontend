@@ -6,7 +6,7 @@ import "./PostForm.css"
 const PostForm = () => {
   const history = useNavigate()
 
-  const currentUser = 'butte134'
+  const currentUser = 'Anonymous'
 
   const [postData, setPostData] = useState({
     user: currentUser, message: '', upvotes: 0
@@ -26,7 +26,7 @@ const PostForm = () => {
       )
       .then((response) => {
         setPostData(response.data)
-        setPostData({ user: currentUser, message: '', upvotes: 0 })
+        setPostData({ user: 'Anonymous', message: '', upvotes: 0 })
         window.location.reload(true)
         history('/home')
       })
