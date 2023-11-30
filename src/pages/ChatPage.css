@@ -1,34 +1,61 @@
-.settings {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  margin-left: 0px;
-  margin-top: -46vh;
-  background-color: blue;
+.main-body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes wave {
+  0% {
+    color: #970c0c; /* Red */
+  }
+  25% {
+    color: #6ad36a; /* Green */
+  }
+  50% {
+    color: #4040b8; /* Blue */
+  }
+  75% {
+    color: #9d469d; /* Magenta */
+  }
+  100% {
+    color: #eb6464; /* Red */
+  }
 }
 
 .new-post-container {
-  height: 60px;
-  width: 380px;
+  height: auto;
+  width: 70%;
+  margin-top: 300px;
+  max-width: 600px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -190px;
-  margin-top: -34vh;
-  background-color: red;
+  font-size: 1.6rem;
+  animation: wave 4s infinite;
+  text-align: center;
+  background-color: transparent;
 }
 
 .posts-container {
   background-color: transparent;
-  width: 380px;
+  max-width: 600px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -14vh;
-  margin-left: -190px;
+  width: 70%;
   max-height: 600px;
+  margin-top: 700px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .posts-container {
+    width: 90%;
+    margin-top: 740px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .new-post-container {
+    width: 90%;
+    font-size: 1.4rem;
+  }
 }
