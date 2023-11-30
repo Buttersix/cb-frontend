@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 @keyframes wave {
@@ -23,38 +24,33 @@
   }
 }
 
-.new-post-container {
+.page-header {
   height: auto;
   width: 70%;
-  margin-top: 300px;
   max-width: 600px;
-  position: absolute;
+  transition: font-size 0.3s ease;
   font-size: 1.6rem;
   animation: wave 4s infinite;
   text-align: center;
-  background-color: transparent;
+  margin-top: 100px;
 }
 
-.posts-container {
+.posts {
   background-color: transparent;
   max-width: 600px;
-  position: absolute;
   width: 70%;
   max-height: 600px;
-  margin-top: 700px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
-  .posts-container {
+  .posts {
     width: 90%;
-    margin-top: 740px;
   }
 }
 
 @media screen and (max-width: 440px) {
-  .new-post-container {
+  .page-header {
     width: 90%;
     font-size: 1.4rem;
   }

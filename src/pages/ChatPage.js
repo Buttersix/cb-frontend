@@ -23,15 +23,24 @@ const ChatPage = () => {
 
   return (
     <div className="main-body">
+      <div className="page-header">
+        Welcome to the personal site of Billy Buttermore. This is my dev blog for now, and will feature updates on any projects I am currently working on!
+      </div>
+      <div className="posts">
+        {posts.map(post => (
+          <Card key={post.id} post={post} />
+        ))}
+      </div>
+      {/*
       <div className="new-post-container">
-        {/*<PostForm />*/}
+        {/*<PostForm />
         Welcome to the personal site of Billy Buttermore. This is my dev blog for now, and will feature updates on any projects I am currently working on!
       </div>
       <div className="posts-container" id="posts-container">
         {posts.map(post => (
           <Card key={post.id} post={post}/>
         ))}
-      </div>
+        </div>*/}
     </div>
   )
 }

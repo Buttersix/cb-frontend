@@ -16,15 +16,14 @@
   width: 100%;
   color: rgb(10, 174, 35);
   padding-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
-.img {
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-  margin-left: 0%;
+.date {
+  padding-bottom: 12px;
+  font-size: 1.1rem;
+  color: rgb(190, 26, 26);
 }
 
 .message {
